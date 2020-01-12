@@ -1,0 +1,133 @@
+h3 {
+    margin: 0px;
+    padding: 10px;
+}
+
+.widget {
+    background: #333333;
+    color: white;
+    max-width: 350px;
+    border-radius: 10px;
+}
+.title {
+    border-bottom: black solid 2px;
+}
+
+#contacts {
+    position: relative;
+}
+
+#list {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#list tr:nth-child(even) {
+    background: #1a1a1a;
+}
+
+#list td {
+    position: relative;
+    border: 1px solid black;
+    padding: 8px 13px;
+}
+
+#list td:nth-child(1) {
+    cursor: pointer;
+}
+
+#list td:nth-child(2) {
+    color: #565656;
+    width: 65%;
+}
+
+.dot {
+    display: inline-block;
+    border-radius: 50%;
+    border-width: 5px;
+    height: 8px;
+    width: 8px;
+    margin-right: 10px;
+}
+
+.active {
+    background-color: chartreuse;
+}
+
+.away {
+    background-color: yellow;
+}
+
+.inactive {
+    background-color: red;
+}
+
+.bottom-section {
+    text-align: right;
+    border-top: black solid 2px;
+}
+
+#overlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.name-overlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: darkgray;
+    z-index: 3;
+}
+
+.name-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.contact-info-overlay {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: darkgray;
+    z-index: 3;
+}
+
+.contact-info-overlay-text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+select {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+select > option {
+    border-radius: 5px;
+}
+

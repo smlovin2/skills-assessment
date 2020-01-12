@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/css/contactList.css">
+</head>
+<body>
+    <div class="widget">
+        <div class="title">
+            <h3>Contacts</h3>
+        </div>
+        <div id="contacts">
+            <div id="overlay" onclick="hideOverlay()"></div>
+            <table id="list"></table>
+        </div>
+        <div class="bottom-section">
+            <select id="email-or-phone" onchange="displayEmailOrPhone(this)">
+                <option value="email">Email address</option>
+                <option value="phone">Phone number</option>
+            </select>
+        </div>
+    </div>
+    <script src="assets/js/contactList.js"></script>
+</body>
+</html>
